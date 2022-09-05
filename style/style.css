@@ -590,7 +590,7 @@ form {
   margin: 5% 0;
   padding: 2% 0;
   border: solid 1px gray;
-  background-image: url(imgs/bg-contact.jpg);
+  background-image: url(/imgs/bg-contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
