@@ -341,11 +341,30 @@ header h3 {
 }
 
 .resume-sec-1 {
+
+  /* position: relative; */
+  max-height: 90vh;
+  width: 100%;
+  background-image: url(../imgs/bg-1.png);
+  background-size: cover;
+  background-position: top 25% right 0;
+  background-repeat: no-repeat;
+  
+}
+/* .resume-sec-1:before {
   background-image: url(../imgs/bg-1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 100% 124vh;
-}
+  content: "";
+  height: 100vh;
+  max-height:100vh ;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+
+} */
 
 .resume-sec-1 article {
   padding-bottom: 2%;
