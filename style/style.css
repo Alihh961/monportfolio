@@ -118,7 +118,7 @@ header h3 {
   height: 6em;
   top: 50%;
   right: 0%;
-  background-image: url(imgs/mon\ cv.png);
+  background-image: url(../imgs/mon\ cv.png);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 5;
@@ -126,7 +126,7 @@ header h3 {
 }
 
 .cvpdf:hover {
-  background-image: url(imgs/Download-icon.png);
+  background-image: url(../imgs/Download-icon.png);
   background-repeat: no-repeat;
   background-size: 100% 4em;
   position: fixed;
@@ -341,7 +341,7 @@ header h3 {
 }
 
 .resume-sec-1 {
-  background-image: url(../0ef3d1c3ddb4991db19c9ee4ac57ca1d.jpg);
+  background-image: url(../imgs/bg-1.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -407,7 +407,7 @@ display: block;
 }
 
 .competences {
-  background-image: url(../imgs/6ea5b4a88f0b4f91945b40499aa0af00.webp);
+  background-image: url(../imgs/sdw-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -528,7 +528,7 @@ color:black;
   top: 0;
   left: 0;
   content: "";
-  background: url(/imgs/projects.JPG);
+  background: url(../imgs/projects.JPG);
   background-size: 100% 100%;
   width: 100%;
   height: -webkit-fill-available;
@@ -590,7 +590,7 @@ form {
   margin: 5% 0;
   padding: 2% 0;
   border: solid 1px gray;
-  background-image: url(/imgs/bg-contact.jpg);
+  background-image: url(../imgs/bg-contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
