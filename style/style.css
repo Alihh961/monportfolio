@@ -528,7 +528,7 @@ color:black;
   top: 0;
   left: 0;
   content: " ";
-  background: url(imgs/projects.jpg);
+  background: url(/imgs/projects.JPG);
   background-size: 100% 100%;
   width: 100%;
   height: -webkit-fill-available;
