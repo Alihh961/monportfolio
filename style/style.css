@@ -344,6 +344,7 @@ header h3 {
   background-image: url(../imgs/bg-1.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: 100% 124vh;
 }
 
 .resume-sec-1 article {
@@ -407,7 +408,7 @@ display: block;
 }
 
 .competences {
-  background-image: url(../imgs/sdw-img.jpg);
+  background-image: url(../imgs/cv\ bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -528,7 +529,7 @@ color:black;
   top: 0;
   left: 0;
   content: "";
-  background: url(../imgs/projects.JPG);
+  background: url(../imgs/projects.jpg);
   background-size: 100% 100%;
   width: 100%;
   height: -webkit-fill-available;
