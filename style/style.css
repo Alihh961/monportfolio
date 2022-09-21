@@ -878,6 +878,7 @@ footer div a {
 
   .projects article h3 {
     font-size: 1em;
+    color: black;
   }
 
   .projects article p {
@@ -900,6 +901,7 @@ footer div a {
   #form {
 
     width: 100%;
+    margin: 0;
   }
 
   footer label {
