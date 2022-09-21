@@ -112,8 +112,12 @@ setTimeout(dis4 ,2100 );
 
 // List of competences animation
 
-let list = document.querySelectorAll(".skills lu li");
+function yes (){
 
+let list = document.querySelectorAll(".skills lu li");
+if(window.innerWidth <= 1500) {
+return;
+}else{
 for( i=1; i <= list.length ; i++){
 gsap.from(`.skills lu li:nth-child(${i})` , {
   scrollTrigger: {
@@ -121,13 +125,17 @@ gsap.from(`.skills lu li:nth-child(${i})` , {
     scrub:false,
     toggleActions:"play reset play reset",
 },
-  x: 500 ,
+  x: 200 ,
   opacity:0 ,
   color:"	#ff4500",
   duration:1.5,
   delay:i/3,
  
-});}
+});}}
+
+}
+
+yes ();
 
 
 

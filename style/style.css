@@ -139,7 +139,6 @@ header h3 {
 .main-sec-1 {
   background-color: #bdd4e7;
   background: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
-  
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -187,6 +186,9 @@ header h3 {
 
 .main-mine {
   padding: 5% 0 0 0;
+  display: flex;
+  justify-content:center;
+ 
 
 }
 
@@ -342,8 +344,7 @@ header h3 {
 
 .resume-sec-1 {
 
-  /* position: relative; */
-  max-height: 90vh;
+
   width: 100%;
   background-image: url(../imgs/bg-1.png);
   background-size: cover;
@@ -807,9 +808,10 @@ footer div a {
   }
   .main-mine a {
     position: static !important;
-    height: 4em !important;
-    font-size: 0.75em;
-    width: 18% !important   ;
+    height: 6em !important;
+    font-size: 0.6em;
+    width: 18% !important;
+    margin: 1%;
   }
 
   .skills h3 {
@@ -845,8 +847,9 @@ footer div a {
     font-size: 1em;
   }
 
-  .skills lu {
+  .comp-list {
     font-size: 0.75em;
+    padding: 2%;
   }
 
   .table img {
