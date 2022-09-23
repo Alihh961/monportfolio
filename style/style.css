@@ -217,17 +217,6 @@ header h3 {
   background-color: white;
 }
 
-
-<<<<<<< HEAD
-=======
-}
-
-.main-mine a {
-  width: 8em !important;
-  font-size: 1em;
-}
-
->>>>>>> eca9f18d811f1cd39c56469e1d00d12ff1f2b5e4
 .main-mine a:first-child {
   color: black;
   font-weight: 800;
@@ -374,20 +363,10 @@ header h3 {
 
 .resume-sec-1 {
 
-<<<<<<< HEAD
-  /* width: 100%; */
   background: url(../imgs/bg-1.png) no-repeat center center ;
   background-size: 100% 100% ;
   padding: auto 2%;
-=======
 
-  width: 100%;
-  background-image: url(../imgs/bg-1.png);
-  background-size: cover;
-  background-position: top 25% right 0;
-  background-repeat: no-repeat;
->>>>>>> eca9f18d811f1cd39c56469e1d00d12ff1f2b5e4
-  
 }
 
 .resume-sec-1 article {
@@ -845,29 +824,18 @@ justify-content: space-around;
   }
   .main-mine a {
     position: static !important;
-<<<<<<< HEAD
-
     font-size: 1vw;
-
-=======
-    height: 6em !important;
-    font-size: 0.6em;
-    /* width: 8em; */
-    margin: 1%;
->>>>>>> eca9f18d811f1cd39c56469e1d00d12ff1f2b5e4
   }
 
-  .skills h3 {
-    /* font-size: 2em; */
-  }
+
 
   header h5 {
-    /* font-size: 3vw; */
+   
     width: 30% !important;
   }
 
   header h3 {
-    /* font-size: 4vw; */
+
     width: 100% !important;
   }
   .test1 {
@@ -916,20 +884,13 @@ justify-content: space-around;
   }
 
   .projects article h3 {
-<<<<<<< HEAD
-    /* font-size: 1em; */
-  }
-
-  .projects article p {
-    /* font-size: 0.5em; */
-=======
     font-size: 1em;
     color: #eea302;
   }
 
   .projects article p {
     font-size: 0.75em;
->>>>>>> eca9f18d811f1cd39c56469e1d00d12ff1f2b5e4
+
     width: 100%;
     margin-bottom: 5%;
   }
