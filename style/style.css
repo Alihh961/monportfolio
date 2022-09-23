@@ -6,6 +6,50 @@
 
 }
 
+p{
+
+  font-size: 1vw;
+}
+
+h1{
+
+font-size: 2.5vw;
+
+}
+
+h2{
+
+  font-size: 2.25vw;
+
+
+}
+
+h3{
+
+  font-size: 2.0vw;
+
+}
+
+h4{
+
+
+  font-size: 1.75vw;
+}
+
+h5{
+
+  font-size: 1.5vw;
+
+}
+
+h6{
+
+  font-size: 1.25vw;
+
+}
+
+
+
 hr { 
 
   margin: 0;
@@ -112,34 +156,10 @@ header h3 {
   font-family: "Work Sans";
 }
 
-.cvpdf {
-  position: fixed;
-  width: 4%;
-  height: 6em;
-  top: 50%;
-  right: 0%;
-  background-image: url(../imgs/mon\ cv.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 5;
-  filter: drop-shadow(-4px -2px 5px #000);
-}
-
-.cvpdf:hover {
-  background-image: url(../imgs/Download-icon.png);
-  background-repeat: no-repeat;
-  background-size: 100% 4em;
-  position: fixed;
-  content: "";
-}
-
-
-
 
 .main-sec-1 {
   background-color: #bdd4e7;
   background: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
-  
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -152,8 +172,6 @@ header h3 {
   width: 15rem;
 }
 
-
-
 .main-sec-1 .abit {
   padding-left: 2%;
   padding-top: 2%;
@@ -164,13 +182,13 @@ header h3 {
 }
 
 .abit h1 {
-  font-size: 9em;
+  /* font-size: 9em; */
   font-family: "Work Sans";
   background:linear-gradient(to right, #000000 0, white 10%, #000000 20%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: helloanimation 2s 2.8s;
-  background-position: -100px;
+  background-position: 10em;
   
 
 }
@@ -178,68 +196,24 @@ header h3 {
 @keyframes helloanimation {
 
   0%{background-position: -5vw;}
-  100%{background-position:25vw;}
+  100%{background-position:23vw;}
 }
-
-
-
-
 
 .main-mine {
   padding: 5% 0 0 0;
 
 }
 
-@keyframes one {
+.main-mine a {
 
-  0% {
-  left:-11%
-  
-  }
-  
-  100% {
-  
-    left:43;
-  }
-  
-  }
-
-@keyframes two {
-
-  0% {
-    left: 43%;
-  }
-  100% {
-    left:50%;
-  }
-}
-
-
-
-@keyframes three {
-
-0% {
-  left: 50%;
-}
-100% {
-  left:58%;
-}
-
+ font-size: 1vw;
 
 }
 
-@keyframes  four {
-
-0% {
-  left: 58%;
+.main-mine a:hover {
+  background-color: white;
 }
-100% {
-  left:66%;
-}
- 
 
-
-}
 
 .main-mine a:first-child {
   color: black;
@@ -336,35 +310,63 @@ header h3 {
 
 }
 
-.main-mine a:hover {
-  background-color: white;
+
+@keyframes one {
+
+  0% {
+  left:-11%
+  
+  }
+  
+  100% {
+  
+    left:43;
+  }
+  
+  }
+
+@keyframes two {
+
+  0% {
+    left: 43%;
+  }
+  100% {
+    left:50%;
+  }
 }
+
+@keyframes three {
+
+0% {
+  left: 50%;
+}
+100% {
+  left:58%;
+}
+
+
+}
+
+@keyframes  four {
+
+0% {
+  left: 58%;
+}
+100% {
+  left:66%;
+}
+}
+
+
 
 .resume-sec-1 {
 
-  /* position: relative; */
-  max-height: 90vh;
-  width: 100%;
-  background-image: url(../imgs/bg-1.png);
-  background-size: cover;
-  background-position: top 25% right 0;
-  background-repeat: no-repeat;
+  /* width: 100%; */
+  background: url(../imgs/bg-1.png) no-repeat center center ;
+  background-size: 100% 100% ;
+  padding: auto 2%;
   
 }
-/* .resume-sec-1:before {
-  background-image: url(../imgs/bg-1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  content: "";
-  height: 100vh;
-  max-height:100vh ;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  top: 0;
-
-} */
 
 .resume-sec-1 article {
   padding-bottom: 2%;
@@ -374,12 +376,13 @@ header h3 {
   text-align: center;
   padding: 3% 0%;
   font-family: "Work Sans";
-  font-size: 2rem;
+  /* font-size: 4vh; */
 }
 
 .cvtable {
   font-family: 'Work Sans';
   margin: auto;
+  width: 100%;
 
 }
 
@@ -391,8 +394,8 @@ header h3 {
 
 .cvtable tr {
 padding-bottom:10%;
-display: block;
-
+/* display: block; */
+width: 100%;
 
 }
 
@@ -401,11 +404,6 @@ display: block;
   column-count: 2;
 
 }
-
-
-
-
-
 
 .skills {
   display: flex;
@@ -422,7 +420,7 @@ display: block;
 
 .skills h3 {
   padding: 2% 0%;
-  font-size: 3em;
+  /* font-size: 3em; */
   color: orangered;
 }
 
@@ -738,6 +736,16 @@ footer div a {
 }
 
 @media all and (max-width: 900px) {
+
+  /* .abit h1 {
+
+    animation:none;
+  } */
+
+nav{
+  display:none;
+}
+
   .besidename {
     display: none;
   }
@@ -805,24 +813,32 @@ footer div a {
     height: 5rem;
     width: 5rem;
   }
+
+  .main-mine{
+
+display: flex;
+justify-content: space-around;
+
+
+  }
   .main-mine a {
     position: static !important;
-    height: 4em !important;
-    font-size: 0.75em;
-    width: 18% !important   ;
+
+    font-size: 1vw;
+
   }
 
   .skills h3 {
-    font-size: 2em;
+    /* font-size: 2em; */
   }
 
   header h5 {
-    font-size: 3vw;
+    /* font-size: 3vw; */
     width: 30% !important;
   }
 
   header h3 {
-    font-size: 4vw;
+    /* font-size: 4vw; */
     width: 100% !important;
   }
   .test1 {
@@ -869,11 +885,11 @@ footer div a {
   }
 
   .projects article h3 {
-    font-size: 1em;
+    /* font-size: 1em; */
   }
 
   .projects article p {
-    font-size: 0.5em;
+    /* font-size: 0.5em; */
     width: 100%;
   }
 

@@ -56,20 +56,20 @@ document.onclick = hideMenu;
 
 // Changing the display of the form on submitting  
 
-let formJs =document.getElementById('form');
-let thanks =document.getElementById('thanks');
-let btnSoumis = document.getElementById('submit');
-let back =document.getElementById('back');
+// let formJs =document.getElementById('form');
+// let thanks =document.getElementById('thanks');
+// let btnSoumis = document.getElementById('submit');
+// let back =document.getElementById('back');
 
-btnSoumis.onclick=function(){
-    formJs.style="display:none;";
-    thanks.style="display:flex;";
-}
+// btnSoumis.onclick=function(){
+//     formJs.style="display:none;";
+//     thanks.style="display:flex;";
+// }
 
-back.onclick=function(){
-    formJs.style="display:static;";
-    thanks.style="display:none;";
-}
+// back.onclick=function(){
+//     formJs.style="display:static;";
+//     thanks.style="display:none;";
+// }
 
 
 ////////////////////////////////////////////
@@ -88,6 +88,8 @@ gsap.from (myPhoto ,{ duration:1.7 , delay:4.0 ,width:0 , height:0 , opacity:-1 
 
 
 // Animation 4 circles
+
+
 
 let oneJs = document.getElementById('onejs');
 let twoJs = document.getElementById('twojs');
@@ -112,22 +114,22 @@ setTimeout(dis4 ,2100 );
 
 // List of competences animation
 
-let list = document.querySelectorAll(".skills lu li");
+// let list = document.querySelectorAll(".skills lu li");
 
-for( i=1; i <= list.length ; i++){
-gsap.from(`.skills lu li:nth-child(${i})` , {
-  scrollTrigger: {
-    trigger:`.skills lu li:nth-child(${i})`,
-    scrub:false,
-    toggleActions:"play reset play reset",
-},
-  x: 500 ,
-  opacity:0 ,
-  color:"	#ff4500",
-  duration:1.5,
-  delay:i/3,
+// for( i=1; i <= list.length ; i++){
+// gsap.from(`.skills lu li:nth-child(${i})` , {
+//   scrollTrigger: {
+//     trigger:`.skills lu li:nth-child(${i})`,
+//     scrub:false,
+//     toggleActions:"play reset play reset",
+// },
+//   x: 500 ,
+//   opacity:0 ,
+//   color:"	#ff4500",
+//   duration:1.5,
+//   delay:i/3,
  
-});}
+// });}
 
 
 
