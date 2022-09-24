@@ -80,7 +80,7 @@ document.onclick = hideMenu;
 
 
 var myPhoto = document.getElementsByClassName("myphoto");
-gsap.from (myPhoto ,{ duration:1.7 , delay:4.0 ,width:0 , height:0 , opacity:-1 } )
+gsap.from (myPhoto ,{ duration:1.7 , delay:2.5 ,width:0 , height:0 , opacity:-1 } )
 
 
 ////////////////////////////////////////////
@@ -91,7 +91,6 @@ gsap.from (myPhoto ,{ duration:1.7 , delay:4.0 ,width:0 , height:0 , opacity:-1 
 
 
 
-let oneJs = document.getElementById('onejs');
 let twoJs = document.getElementById('twojs');
 let threeJs = document.getElementById('threejs');
 let fourJs = document.getElementById('fourjs');
