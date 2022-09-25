@@ -14,43 +14,37 @@ body{
 
 p{
 
-  font-size: 1vw;
+  font-size: 16px;
 }
 
 h1{
 
-font-size: 2.0vw;
+font-size: 50px;
 
 }
 
 h2{
 
-  font-size: 1.875vw;
+  font-size: 46px;
 
 
 }
 
 h3{
 
-  font-size: 1.5vw;
+  font-size: 40;
 
 }
 
 h4{
 
 
-  font-size: 1.375vw;
-}
-
-h5{
-
-  font-size: 1.25vw;
-
+  font-size: 20px;
 }
 
 h6{
 
-  font-size: 1.125vw;
+  font-size: 12px;
 
 }
 
@@ -171,8 +165,11 @@ header h3 {
 
 .myphoto {
   border-radius: 100%;
-  height: 14rem;
-  width: 15rem;
+  border:solid #ff3b25 1px;
+  padding: 1%;
+  max-height: 14rem;
+  max-width: 16rem;
+
 }
 
 .main-sec-1 .abit {
@@ -209,7 +206,7 @@ header h3 {
 }
 
 .main-mine a:hover {
-  background-color: white;
+  background-color: white !important;
 }
 
 .main-mine a:first-child {
