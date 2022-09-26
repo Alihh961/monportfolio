@@ -28,6 +28,8 @@ function rightClick(e) {
     e.preventDefault();// Canceling the default context menu 
 
     
+
+
 // Adding our customized context menu
 
 if (document.getElementById("contextMenu")
@@ -51,28 +53,6 @@ document.onclick = hideMenu;
         document.getElementById("contextMenu")
                 .style.display = "none"
 }
-
-
-
-// Changing the display of the form on submitting  
-
-// let formJs =document.getElementById('form');
-// let thanks =document.getElementById('thanks');
-// let btnSoumis = document.getElementById('submit');
-// let back =document.getElementById('back');
-
-// btnSoumis.onclick=function(){
-//     formJs.style="display:none;";
-//     thanks.style="display:flex;";
-// }
-
-// back.onclick=function(){
-//     formJs.style="display:static;";
-//     thanks.style="display:none;";
-// }
-
-
-////////////////////////////////////////////
 
 
 
@@ -117,7 +97,7 @@ setTimeout(dis4 ,2100 );
 function yes (){
 
 let list = document.querySelectorAll(".skills lu li");
-if(window.innerWidth <= 1500) {
+if(window.innerWidth <= 1200) {
 return;
 }else{
 for( i=1; i <= list.length ; i++){
