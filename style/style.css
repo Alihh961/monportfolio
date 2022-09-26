@@ -15,7 +15,7 @@ body {
 
 p {
 
-  font-size: 1.5rem !important;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.5;
 
@@ -150,6 +150,7 @@ header h3 {
   color: black;
   padding: 0 3%;
   font-size: 16px;
+  font-weight: bold;
 }
 
 
@@ -345,9 +346,6 @@ header h3 {
 #cv {
 
   padding: 2%;
-  /* display: flex;
-  flex-direction: column; */
-
 
 }
 
@@ -356,7 +354,6 @@ header h3 {
   text-align: center;
   padding-bottom: 2%;
   color: orangered;
-
 
 }
 
@@ -386,21 +383,21 @@ header h3 {
 .exp {
 
   border: solid rgb(152, 0, 137) 2px;
-  width: 50rem;
   text-align: center;
   margin: auto auto 2rem auto;
-
   border-radius: 20px;
+  padding: 1%;
 
 }
 
 .edu {
 
   border: solid rgb(152, 0, 137) 2px;
-  width: 50rem;
   margin: auto auto 2rem auto;
   text-align: center;
   border-radius: 20px;
+  padding: 1%;
+
 
 }
 
@@ -409,14 +406,15 @@ header h3 {
 .lang {
 
   border: solid rgb(152, 0, 137) 2px;
-  width: 50rem;
   margin: auto;
   text-align: center;
+  padding: 1% 5%;
   border-radius: 20px;
 
 }
 
 .langlist {
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -443,14 +441,10 @@ header h3 {
   font-weight: 500;
 }
 
-
-
 .skills h2 {
   padding: 2% 0%;
-  /* font-size: 3em; */
   color: orangered;
 }
-
 
 .table {
   position: relative;
@@ -493,6 +487,18 @@ header h3 {
   margin-right: 6%;
 }
 
+img[alt='jQuery'] {
+
+  background-color: #8cb1d4;
+  border-radius: 21px;
+}
+
+.table div div {
+
+  height: 20px;
+
+}
+
 .html-per {
   background: linear-gradient(90deg,
       rgba(241 101 36),
@@ -500,8 +506,6 @@ header h3 {
       rgba(255, 255, 255, 1) 20%);
   width: 23rem;
   max-width: 23rem !important;
-  height: 1rem;
-  max-height: 1rem !important;
   border: solid black;
   border-radius: 4px;
   font-weight: 800;
@@ -514,8 +518,6 @@ header h3 {
       rgba(255, 255, 255, 1) 25%);
   width: 23rem;
   max-width: 23rem !important;
-  height: 1rem;
-  max-height: 1rem !important;
   border: solid black;
   border-radius: 4px;
   font-weight: 800;
@@ -528,8 +530,6 @@ header h3 {
       rgba(255, 255, 255, 1) 50%);
   width: 23rem;
   max-width: 23rem !important;
-  height: 1rem;
-  max-height: 1rem !important;
   border: solid black;
   border-radius: 4px;
   font-weight: 800;
@@ -542,8 +542,6 @@ header h3 {
       rgba(255, 255, 255, 1) 50%);
   width: 23rem;
   max-width: 23rem !important;
-  height: 1rem;
-  max-height: 1rem !important;
   border: solid black;
   border-radius: 4px;
   font-weight: 800;
@@ -556,8 +554,6 @@ header h3 {
       rgba(255, 255, 255, 1) 50%);
   width: 23rem;
   max-width: 23rem !important;
-  height: 1rem;
-  max-height: 1rem !important;
   border: solid black;
   border-radius: 4px;
   font-weight: 800;
@@ -669,12 +665,16 @@ footer div a {
 
 
 
-/* p {
 
-    font-size: calc(1.275rem + .3vw) !important;
-  } */
 
 @media all and (max-width: 992px) {
+
+
+
+  p {
+
+    font-size: calc(1.275rem + .3vw) !important;
+  }
 
 
   header {
@@ -689,27 +689,33 @@ footer div a {
 
   .menu-mobile {
 
-    display: flex;
+    /* display:flex; */
+    display: none;
     flex-direction: column;
-    float:left;
+    float: left;
     background-color: #80d8da;
     position: absolute;
     right: 0;
     top: 100%;
     width: 100%;
-    height: 100vh;
+    height: 20rem;
     line-height: 5;
     border-bottom: solid black;
     list-style: none;
-    padding-top:5%
+    padding-top: 5%;
+    text-align: left;
 
   }
 
+
+
   .menu-mobile a {
 
-  text-decoration: none;
-  color: black;
-  font-weight:bold;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 0 0 0 1%;
+
 
 
   }
@@ -722,13 +728,29 @@ footer div a {
     position: relative;
     max-width: 2.1rem;
     margin-left: 15rem;
-   
+
+
 
   }
 
- 
 
-  #open-menu span{
+
+
+  #open-menu:before {
+
+    display: none;
+    position: absolute;
+    right: -28%;
+    content: '';
+    border-color: transparent transparent #80d8da transparent;
+    border-width: 25px;
+    border-style: solid;
+
+  }
+
+
+
+  #open-menu span {
 
     line-height: 2;
     background-color: black;
@@ -742,29 +764,41 @@ footer div a {
 
   }
 
-  #open-menu span:nth-child(2){
+  #open-menu span:nth-child(2) {
 
-    top:calc(50% - 0.5vh);
-    
+    top: calc(50% - 0.5vh);
 
-  }
-
-  #open-menu span:last-child{
-
-    top:calc(100% - 1vh)
 
   }
 
-  #close-menu{
+  #open-menu span:last-child {
 
-    margin-top:5%;
+    top: calc(100% - 1vh)
+  }
+
+  #close-menu {
+
+    width: fit-content;
+    margin: auto;
     color: red;
+
   }
 
+  .projects article div {
+
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+
+
+  }
 
 }
 
 ;
+
+
 
 
 @media all and (max-width: 768px) {}
