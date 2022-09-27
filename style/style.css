@@ -7,6 +7,7 @@
 
 }
 
+
 body {
 
   background: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
@@ -657,7 +658,7 @@ footer div a {
 
 
 
-#open-menu {
+.open-menu {
 
   display: none;
 
@@ -719,7 +720,7 @@ footer div a {
 
   }
 
-  #open-menu {
+  .open-menu {
 
     display: inline-block;
     flex: .5;
@@ -728,8 +729,6 @@ footer div a {
     max-width: 2.1rem;
     margin-left: 28%;
     cursor: pointer;
-
-
 
   }
 
@@ -744,37 +743,37 @@ footer div a {
     border-color: transparent transparent #80d8da transparent;
     border-width: 25px;
     border-style: solid;
-    height: 5px;
+    height: 9px;
 
   }
 
 
 
-  #open-menu span {
+  .open-menu span {
 
     line-height: 2;
     background-color: black;
-    height: 1vh;
+    height: .5vh;
     width: 2rem;
     position: absolute;
     display: inline-block;
     right: 0;
     border-radius: 2px;
-    margin: 1% 0;
-
-
+   
   }
 
-  #open-menu span:nth-child(2) {
+  .open-menu span:nth-child(2) {
 
     top: calc(50% - 0.5vh);
+    margin-top: 5px;
 
 
   }
 
-  #open-menu span:last-child {
+  .open-menu span:last-child {
 
-    top: calc(100% - 1vh)
+    top: calc(100% - 1vh);
+    margin-top: 10px;
   }
 
   .projects article div {
