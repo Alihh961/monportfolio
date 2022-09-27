@@ -687,10 +687,9 @@ footer div a {
     display: none;
   }
 
-  .menu-mobile {
+  .menu-mobile.open{
 
-    /* display:flex; */
-    display: none;
+    display: block;
     flex-direction: column;
     float: left;
     background-color: #80d8da;
@@ -727,7 +726,8 @@ footer div a {
     height: 25px;
     position: relative;
     max-width: 2.1rem;
-    margin-left: 15rem;
+    margin-left: 28%;
+    cursor: pointer;
 
 
 
@@ -736,15 +736,15 @@ footer div a {
 
 
 
-  #open-menu:before {
+  .open-menu.menu-active:before {
 
-    display: none;
+    content: '';
     position: absolute;
     right: -28%;
-    content: '';
     border-color: transparent transparent #80d8da transparent;
     border-width: 25px;
     border-style: solid;
+    height: 5px;
 
   }
 
@@ -775,14 +775,6 @@ footer div a {
   #open-menu span:last-child {
 
     top: calc(100% - 1vh)
-  }
-
-  #close-menu {
-
-    width: fit-content;
-    margin: auto;
-    color: red;
-
   }
 
   .projects article div {

@@ -1,16 +1,60 @@
 // Responsive Menu
 
-let menu =document.getElementById("menuburger");
-let navM =document.getElementById("navMobile");
-let cancel=document.getElementById("close");
+var openMenu = document.querySelector('.open-menu');
+var menuMobile = document.querySelector('.menu-mobile');
 
-menu.onclick = function(){
-navM.style= "display:flex";
+
+openMenu.onclick = function (e) {
+
+
+  // stop propagation
+
+  e.stopPropagation();
+
+  //toggle class menu-active //
+  this.classList.toggle("menu-active");
+
+  //toggle class open //
+  menuMobile.classList.toggle("open");
+
+
+
+};
+
+//check if the menuMobile is opened  
+
+
+
+document.addEventListener('click', function (e) {
+
+
+  if (e.target !== openMenu && e.target !== menuMobile) {
+
+    if (menuMobile.classList.contains('open')) {
+
+     //toggle class menu-active  //
+   openMenu.classList.toggle("menu-active");
+
+     //toggle class open //
+    menuMobile.classList.toggle("open");
+
+    }
+
+  }
+})
+
+
+// stop propagation on menuMobile 
+
+menuMobile.onclick = function () {
+
+  e.stopPropagation();
+
 }
 
-cancel.onclick = function(){
-navM.style= "display:none";
-}
+
+
+
 
 //////////////////////////////////
 
@@ -19,28 +63,28 @@ navM.style= "display:none";
 
 
 // Changing the right click default menu 
-     
+
 
 
 document.oncontextmenu = rightClick;
 
 function rightClick(e) {
-    e.preventDefault();// Canceling the default context menu 
-
-    
+  e.preventDefault();// Canceling the default context menu 
 
 
-// Adding our customized context menu
 
-if (document.getElementById("contextMenu")
-            .style.display == "block")
-        hideMenu();
-    else{
-        var menu = document.getElementById("contextMenu")
-        menu.style.display = 'block';
-        menu.style.left = e.pageX + "px";
-        menu.style.top = e.pageY + "px";
-}
+
+  // Adding our customized context menu
+
+  if (document.getElementById("contextMenu")
+    .style.display == "block")
+    hideMenu();
+  else {
+    var menu = document.getElementById("contextMenu")
+    menu.style.display = 'block';
+    menu.style.left = e.pageX + "px";
+    menu.style.top = e.pageY + "px";
+  }
 }
 ///////////////////////////////////
 
@@ -49,9 +93,9 @@ if (document.getElementById("contextMenu")
 // Hiding the customized menu when we click any place in the document 
 
 document.onclick = hideMenu;
-    function hideMenu() {
-        document.getElementById("contextMenu")
-                .style.display = "none"
+function hideMenu() {
+  document.getElementById("contextMenu")
+    .style.display = "none"
 }
 
 
@@ -60,7 +104,7 @@ document.onclick = hideMenu;
 
 
 var myPhoto = document.getElementsByClassName("myphoto");
-gsap.from (myPhoto ,{ duration:1.7 , delay:2.5 ,width:0 , height:0 , opacity:-1 } )
+gsap.from(myPhoto, { duration: 1.7, delay: 2.5, width: 0, height: 0, opacity: -1 })
 
 
 ////////////////////////////////////////////
@@ -76,17 +120,17 @@ let threeJs = document.getElementById('threejs');
 let fourJs = document.getElementById('fourjs');
 
 function dis2() {
-    twoJs.style="display:flex;"
+  twoJs.style = "display:flex;"
 };
 function dis3() {
-    threeJs.style="display:flex;"
+  threeJs.style = "display:flex;"
 };
 function dis4() {
-    fourJs.style="display:flex;"
+  fourJs.style = "display:flex;"
 };
-setTimeout(dis2 ,700 );
-setTimeout(dis3 ,1400 );
-setTimeout(dis4 ,2100 );
+setTimeout(dis2, 700);
+setTimeout(dis3, 1400);
+setTimeout(dis4, 2100);
 
 /////////////////////////////////////////////
 
@@ -94,30 +138,32 @@ setTimeout(dis4 ,2100 );
 // List of competences animation
 
 
-function yes (){
+function yes() {
 
-let list = document.querySelectorAll(".skills lu li");
-if(window.innerWidth <= 1200) {
-return;
-}else{
-for( i=1; i <= list.length ; i++){
-gsap.from(`.skills lu li:nth-child(${i})` , {
-  scrollTrigger: {
-    trigger:`.skills lu li:nth-child(${i})`,
-    scrub:false,
-    toggleActions:"play reset play reset",
-},
-  x: 200 ,
-  opacity:0 ,
-  color:"	#ff4500",
-  duration:1.5,
-  delay:i/3,
- 
-});}}
+  let list = document.querySelectorAll(".skills lu li");
+  if (window.innerWidth <= 1200) {
+    return;
+  } else {
+    for (i = 1; i <= list.length; i++) {
+      gsap.from(`.skills lu li:nth-child(${i})`, {
+        scrollTrigger: {
+          trigger: `.skills lu li:nth-child(${i})`,
+          scrub: false,
+          toggleActions: "play reset play reset",
+        },
+        x: 200,
+        opacity: 0,
+        color: "	#ff4500",
+        duration: 1.5,
+        delay: i / 3,
+
+      });
+    }
+  }
 
 }
 
-yes ();
+yes();
 
 
 
@@ -127,36 +173,39 @@ yes ();
 
 // Competences loading  
 
-gsap.from('.table div div', {scrollTrigger: {
- trigger:'.js-per', 
- toggleActions:"play reset play reset",
- onEnter:animate,
- onEnterBack:animate,   
-},
- width:0  , duration: 2 , opacity:-1  }
-); 
+gsap.from('.table div div', {
+  scrollTrigger: {
+    trigger: '.js-per',
+    toggleActions: "play reset play reset",
+    onEnter: animate,
+    onEnterBack: animate,
+  },
+  width: 0, duration: 2, opacity: -1
+}
+);
 
 // Animated counters function 
 
-  function animate (){
-    let spanC= document.querySelectorAll('.table div span:first-child');
-    
-    for(i=0;i<spanC.length; i++){
-    
+function animate() {
+  let spanC = document.querySelectorAll('.table div span:first-child');
+
+  for (i = 0; i < spanC.length; i++) {
+
     function animatePer(obj, start, end, duration) {
-        let startTime;
-        let step = (time) => {
-          if (!startTime) startTime = time;
-          let progress = Math.min((time - startTime) / duration, 1);
-          obj.innerHTML = Math.floor(progress * (end - start) + start);
-          if (progress < 1) {
-            window.requestAnimationFrame(step);
-          }
-        };
-        window.requestAnimationFrame(step);
-      }
-      animatePer(spanC[i], 0, spanC[i].innerHTML, 2000);
-    };}
+      let startTime;
+      let step = (time) => {
+        if (!startTime) startTime = time;
+        let progress = Math.min((time - startTime) / duration, 1);
+        obj.innerHTML = Math.floor(progress * (end - start) + start);
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      };
+      window.requestAnimationFrame(step);
+    }
+    animatePer(spanC[i], 0, spanC[i].innerHTML, 2000);
+  };
+}
 
 
 
@@ -167,18 +216,19 @@ gsap.from('.table div div', {scrollTrigger: {
 // Animation projects paragraphs 
 
 
-for(i=1 ; i<=3 ; i++){
-gsap.from(`#p${i}`, {
-  scrollTrigger:{ 
-    trigger:`#p${i}`,
-    toggleActions:"play reset play reset",
-   },
-  duration: 2.5 ,
-  yPercent: 100,
-  opacity: 0,
-  ease: "power4",
-  stagger: 0.1,
-});};
+for (i = 1; i <= 3; i++) {
+  gsap.from(`#p${i}`, {
+    scrollTrigger: {
+      trigger: `#p${i}`,
+      toggleActions: "play reset play reset",
+    },
+    duration: 2.5,
+    yPercent: 100,
+    opacity: 0,
+    ease: "power4",
+    stagger: 0.1,
+  });
+};
 
 
 ////////////////////////////////////////////
@@ -186,17 +236,17 @@ gsap.from(`#p${i}`, {
 
 
 
-$(function(){
+$(function () {
 
-  function one(){console.log($(this))};
-  function two(){console.log("two")};
-  function three(){$("form tr:nth-child(2) td").css('color', 'red')};
+  function one() { console.log($(this)) };
+  function two() { console.log("two") };
+  function three() { $("form tr:nth-child(2) td").css('color', 'red') };
 
 
-// $("input[id=firstname]").keypress( one )
-$("input[id=firstname]").keyup( one )
-$("input[id=lastname]").keydown( three )
-$("input[id=e-mail]").keypress( three )
+  // $("input[id=firstname]").keypress( one )
+  $("input[id=firstname]").keyup(one)
+  $("input[id=lastname]").keydown(three)
+  $("input[id=e-mail]").keypress(three)
 
 
 
