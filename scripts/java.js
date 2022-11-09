@@ -56,7 +56,7 @@ menuMobile.onclick = function () {
 
 
 
-//////////////////////////////////
+// **************************************************************************************
 
 
 
@@ -86,7 +86,7 @@ function rightClick(e) {
     menu.style.top = e.pageY + "px";
   }
 }
-///////////////////////////////////
+
 
 
 
@@ -100,14 +100,18 @@ function hideMenu() {
 
 
 
+// **************************************************************************************
+
+
 // Animation myPhoto
 
 
 var myPhoto = document.getElementsByClassName("myphoto");
-gsap.from(myPhoto, { duration: 1.7, delay: 2.5, width: 0, height: 0, opacity: -1 })
+gsap.from(myPhoto, { duration: 1.7, delay: 1.5, width: 0, height: 0, opacity: -1 })
 
 
-////////////////////////////////////////////
+// **************************************************************************************
+
 
 
 
@@ -132,28 +136,31 @@ gsap.from(myPhoto, { duration: 1.7, delay: 2.5, width: 0, height: 0, opacity: -1
 // setTimeout(dis3, 1400);
 // setTimeout(dis4, 2100);
 
-/////////////////////////////////////////////
+
+
+// **************************************************************************************
+
 
 
 // List of competences animation
 
 
-function yes() {
+
 
   let list = document.querySelectorAll(".skills lu li");
-  if (window.innerWidth <= 1200) {
-    return;
-  } else {
+  if (window.innerWidth <= 1800) {
     for (i = 1; i <= list.length; i++) {
       gsap.from(`.skills lu li:nth-child(${i})`, {
         scrollTrigger: {
           trigger: `.skills lu li:nth-child(${i})`,
+          start: "-=500", 
+          end: "+=700",
           scrub: false,
           toggleActions: "play reset play reset",
         },
-        x: 200,
+        yPercent: 100,
         opacity: 0,
-        color: "	#ff4500",
+        color: "#ff4500",
         duration: 1.5,
         delay: i / 3,
 
@@ -161,26 +168,24 @@ function yes() {
     }
   }
 
-}
-
-yes();
 
 
 
 
-////////////////////////////////////////////
+// **************************************************************************************
+
 
 
 // Competences loading  
 
-gsap.from('.table div div', {
+gsap.from('.table div', {
   scrollTrigger: {
     trigger: '.js-per',
     toggleActions: "play reset play reset",
     onEnter: animate,
     onEnterBack: animate,
   },
-  width: 0, duration: 2, opacity: -1
+  duration: 5, opacity: -1
 }
 );
 
@@ -203,13 +208,13 @@ function animate() {
       };
       window.requestAnimationFrame(step);
     }
-    animatePer(spanC[i], 0, spanC[i].innerHTML, 2000);
+    animatePer(spanC[i], 0, spanC[i].innerHTML, 3500);
   };
 }
 
 
 
-////////////////////////////////////////////
+// **************************************************************************************
 
 
 
@@ -231,26 +236,10 @@ for (i = 1; i <= 3; i++) {
 };
 
 
-////////////////////////////////////////////
+// **************************************************************************************
 
 
 
-
-$(function () {
-
-  function one() { console.log($(this)) };
-  function two() { console.log("two") };
-  function three() { $("form tr:nth-child(2) td").css('color', 'red') };
-
-
-  // $("input[id=firstname]").keypress( one )
-  $("input[id=firstname]").keyup(one)
-  $("input[id=lastname]").keydown(three)
-  $("input[id=e-mail]").keypress(three)
-
-
-
-});
 
 
 

@@ -111,7 +111,6 @@ header {
 .name {
 
   display: flex;
-  /* justify-content: flex-start; */
   flex: 1;
   align-items: center;
 }
@@ -170,7 +169,7 @@ header h3 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 10% 3%;
+  padding: 3%;
 }
 
 
@@ -200,7 +199,7 @@ header h3 {
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
-  width: 90%;
+  width: 75%;
 
 
 }
@@ -472,7 +471,7 @@ img[alt='jQuery'] {
       80%,
       rgba(255, 255, 255, 1) 20%);
   width: 23rem;
-  max-width: 23rem !important;
+  /* max-width: 100vw !important; */
   border: solid black;
   border-radius: 4px;
   font-weight: 800;
@@ -693,7 +692,7 @@ footer div a {
     right: 0;
     top: 100%;
     width: 100%;
-    height: 20rem;
+    height: 25rem;
     line-height: 5;
     border-bottom: solid black;
     list-style: none;
@@ -708,7 +707,7 @@ footer div a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    padding: 0 0 0 1%;
+    padding: 0 0 0 5%;
 
   }
 
