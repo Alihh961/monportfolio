@@ -614,7 +614,7 @@ footer div label {
 
 .main-follow img {
   width: 4vw;
-  
+
 }
 
 footer div a {
@@ -639,34 +639,34 @@ footer div a {
 
 
 
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
 
 
 
   .main-mine a {
 
 
-    font-size:0.9rem;
+    font-size: 0.9rem;
     height: 100px;
-    width:100px;
+    width: 100px;
     margin-bottom: 10px;
-  
+
   }
 
-  p{
+  p {
 
 
-    font-size:0.9rem;
-  
+    font-size: 0.9rem;
+
   }
-  
-  h6{
+
+  h6 {
 
     font-size: calc(0.4rem + .8vw);
 
   }
 
-  h3{
+  h3 {
 
     font-size: calc(0.6rem + .8vw);
 
@@ -675,7 +675,7 @@ footer div a {
   header {
 
     position: relative;
- 
+
   }
 
   .navbar {
@@ -703,15 +703,12 @@ footer div a {
   }
 
 
-
   .menu-mobile a {
 
     text-decoration: none;
     color: black;
     font-weight: bold;
     padding: 0 0 0 1%;
-
-
 
   }
 
@@ -727,9 +724,6 @@ footer div a {
 
   }
 
-
-
-
   .open-menu.menu-active:before {
 
     content: '';
@@ -741,8 +735,6 @@ footer div a {
     height: 9px;
 
   }
-
-
 
   .open-menu span {
 
@@ -762,7 +754,6 @@ footer div a {
     top: calc(50% - 0.5vh);
     margin-top: 5px;
 
-
   }
 
   .open-menu span:last-child {
@@ -778,7 +769,6 @@ footer div a {
     flex-direction: column;
     text-align: center;
 
-
   }
 
   .table img {
@@ -786,33 +776,26 @@ footer div a {
     height: 2em;
 
   }
-
 }
 
-;
+@media (max-width: 768px) {}
 
-
-
-
-@media screen and (max-width: 768px) {};
-
-@media screen and (min-width: 576px) {
+@media (max-width: 576px) {
 
   header {
 
     padding: 15px;
   }
+}
 
-};
-
-@media screen and (max-width: 375px) {
+@media (max-width: 375px) {
 
   header {
 
     padding: 10px;
   }
 
-};
+}
 
 
 
