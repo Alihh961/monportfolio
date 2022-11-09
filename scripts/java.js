@@ -115,22 +115,22 @@ gsap.from(myPhoto, { duration: 1.7, delay: 2.5, width: 0, height: 0, opacity: -1
 
 
 
-let twoJs = document.getElementById('twojs');
-let threeJs = document.getElementById('threejs');
-let fourJs = document.getElementById('fourjs');
+// let twoJs = document.getElementById('twojs');
+// let threeJs = document.getElementById('threejs');
+// let fourJs = document.getElementById('fourjs');
 
-function dis2() {
-  twoJs.style = "display:flex;"
-};
-function dis3() {
-  threeJs.style = "display:flex;"
-};
-function dis4() {
-  fourJs.style = "display:flex;"
-};
-setTimeout(dis2, 700);
-setTimeout(dis3, 1400);
-setTimeout(dis4, 2100);
+// function dis2() {
+//   twoJs.style = "display:flex;"
+// };
+// function dis3() {
+//   threeJs.style = "display:flex;"
+// };
+// function dis4() {
+//   fourJs.style = "display:flex;"
+// };
+// setTimeout(dis2, 700);
+// setTimeout(dis3, 1400);
+// setTimeout(dis4, 2100);
 
 /////////////////////////////////////////////
 
